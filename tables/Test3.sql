@@ -1,0 +1,18 @@
+  CREATE TABLE "LOG_CARGUE_NOVEDADES_CART_VEH" 
+   (	"ID" VARCHAR2(255), 
+	"CODIGO_PROCESO" VARCHAR2(255), 
+	"PASO_PROCESO" VARCHAR2(255), 
+	"MENSAJE" VARCHAR2(1000), 
+	"USUARIO" VARCHAR2(255), 
+	"FECHA" DATE, 
+	"SECUENCIA" NUMBER
+   ) ;
+
+   COMMENT ON COLUMN "LOG_CARGUE_NOVEDADES_CART_VEH"."ID" IS 'Id unico de identificacion del log';
+   COMMENT ON COLUMN "LOG_CARGUE_NOVEDADES_CART_VEH"."CODIGO_PROCESO" IS 'Codigo del proceso de ejecucion';
+   COMMENT ON COLUMN "LOG_CARGUE_NOVEDADES_CART_VEH"."PASO_PROCESO" IS 'Identificacion del paso';
+   COMMENT ON COLUMN "LOG_CARGUE_NOVEDADES_CART_VEH"."MENSAJE" IS 'Mensaje de error cuando se genera';
+   COMMENT ON COLUMN "LOG_CARGUE_NOVEDADES_CART_VEH"."USUARIO" IS 'Usuario que ejecuta el proceso';
+   COMMENT ON COLUMN "LOG_CARGUE_NOVEDADES_CART_VEH"."FECHA" IS '
+';
+   COMMENT ON TABLE "LOG_CARGUE_NOVEDADES_CART_VEH"  IS 'Tabla que almacena el log de las ejecuciones de los procesos a nivel de liquidacion de casas de cobro';
